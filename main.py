@@ -11,8 +11,8 @@ class InternetSpeedTwitterBot:
         self.up_speed = None
         self.service = Service(executable_path="C:\Development\chromeself.driver.exe")
         self.driver = webdriver.Chrome(service=self.service)
-        self.promise_up = 40
-        self.promise_down = 30
+        self.promise_up = 100
+        self.promise_down = 150
 
     def get_internet_speed(self):
         URL = "https://www.speedtest.net/"
